@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-
+/*
 package org.firstinspires.ftc.teamcode._Libs;
 
 import android.app.Activity;
@@ -37,7 +37,7 @@ import java.util.Map;
 /**
  * extend the generated ScriptC_rs565 to get {@link Element#RGB_565(RenderScript)} allocations
  * past the checks in ScriptC_rs565#forEach_myKernel565(Allocation, Allocation)
- */
+ *//*
 class ScriptC_PosterizeHue_rs565 extends ScriptC_PosterizeHue {
     private final Element elementRgb565;
     private Map<KernelID, Integer> knownIds = new HashMap<>();
@@ -55,7 +55,7 @@ class ScriptC_PosterizeHue_rs565 extends ScriptC_PosterizeHue {
     /**
      * like ScriptC_rs565#forEach_myKernel565(Allocation, Allocation), but accepting allocations of
      * {@link Element#RGB_565(RenderScript)} instead of {@link Element#U16(RenderScript)}
-     */
+     *//*
     public void forEach_myKernel565_Element_RGB_565(Allocation ain, Allocation aout) {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN) {
             Element inElement = ain.getElement();
@@ -77,7 +77,7 @@ class ScriptC_PosterizeHue_rs565 extends ScriptC_PosterizeHue {
         }
     }
 
-    /** memorize the slots that are private in superclass */
+    /** memorize the slots that are private in superclass *//*
     @Override
     protected KernelID createKernelID(int slot, int sig, Element ein, android.renderscript.Element eout) {
         KernelID kernelID = super.createKernelID(slot, sig, ein, eout);
@@ -115,3 +115,4 @@ public class RS_Posterize {
     }
 
 }
+*/

@@ -77,7 +77,7 @@ public class VuforiaNavigationTest2 extends OpMode {
         mVLib = new VuforiaLib_FTC2017();
         mVLib.init(this, null);     // pass it this OpMode (so it can do telemetry output) and use its license key for now
 
-        mView = (ImageView)((Activity)hardwareMap.appContext).findViewById(com.qualcomm.ftcrobotcontroller.R.id.OpenCVOverlay);
+   //     mView = (ImageView)((Activity)hardwareMap.appContext).findViewById(com.qualcomm.ftcrobotcontroller.R.id.OpenCVOverlay);
         mView.post(new Runnable() {
             @Override
             public void run() {

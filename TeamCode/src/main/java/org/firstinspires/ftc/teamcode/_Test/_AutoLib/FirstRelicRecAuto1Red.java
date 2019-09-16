@@ -40,7 +40,7 @@ import com.qualcomm.robotcore.eventloop.opmode.Autonomous;
  * moves the robot under gyro control while using the camera to look for the
  * correct Cryptobox to stop at.
  */
-
+/*
 @Autonomous(name="FirstRelicRecAuto1Red", group ="Auto")
 //@Disabled
 public class FirstRelicRecAuto1Red extends FirstRelicRecAuto1 {
@@ -50,3 +50,4 @@ public class FirstRelicRecAuto1Red extends FirstRelicRecAuto1 {
     }
 
 }
+*/

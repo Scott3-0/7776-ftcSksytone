@@ -1,5 +1,6 @@
 package org.firstinspires.ftc.teamcode._Test._Sensors;
 
+import com.qualcomm.robotcore.eventloop.opmode.Disabled;
 import com.qualcomm.robotcore.eventloop.opmode.OpMode;
 import com.qualcomm.robotcore.eventloop.opmode.TeleOp;
 import com.qualcomm.robotcore.util.ElapsedTime;
@@ -9,6 +10,8 @@ import org.firstinspires.ftc.teamcode._Libs.PixyCamLego;
 // test PixyCam using LEGO I2C protocol -- only returns biggest block of each signature
 
 @TeleOp(name="TestPixyCamLego")
+@Disabled
+
 public class TestPixyCamLego extends OpMode
 {
 

@@ -52,9 +52,9 @@ import com.qualcomm.robotcore.hardware.GyroSensor;
 import org.firstinspires.ftc.robotcore.external.navigation.RelicRecoveryVuMark;
 import org.firstinspires.ftc.teamcode._Libs.AutoLib;
 import org.firstinspires.ftc.teamcode._Libs.CameraLib;
-import org.firstinspires.ftc.teamcode._Libs.SetPosterizer;
+//import org.firstinspires.ftc.teamcode._Libs.SetPosterizer;
 import org.firstinspires.ftc.teamcode._Libs.HeadingSensor;
-import org.firstinspires.ftc.teamcode._Libs.RS_Posterize;
+//import org.firstinspires.ftc.teamcode._Libs.RS_Posterize;
 import org.firstinspires.ftc.teamcode._Libs.SensorLib;
 import org.firstinspires.ftc.teamcode._Libs.VuforiaLib_FTC2017;
 
@@ -137,7 +137,7 @@ class DiscretizePosterizer implements CameraLib.Filter {
 // this is a guide step that uses camera image data to
 // guide the robot to the indicated bin of the cryptobox
 //
-class GoToCryptoBoxGuideStep extends AutoLib.MotorGuideStep implements SetMark, SetPosterizer {
+/*class GoToCryptoBoxGuideStep extends AutoLib.MotorGuideStep implements SetMark, SetPosterizer {
 
     VuforiaLib_FTC2017 mVLib;
     String mVuMarkString;
@@ -162,7 +162,7 @@ class GoToCryptoBoxGuideStep extends AutoLib.MotorGuideStep implements SetMark, 
     SetBitmap mSBM;                     // interface through which we tell the controlling opMode about our Bitmap so it can display it
     Bitmap mBmOut;                      // processed bitmap we post to RC phone screen
 
-    RS_Posterize mRsPosterizer;         // RenderScript process used to posterize images
+   // RS_Posterize mRsPosterizer;         // RenderScript process used to posterize images
 
     Paint mPaintRed, mPaintGreen, mPaintBlue;   // used to draw info overlays on image
 
@@ -481,7 +481,7 @@ public class FirstRelicRecAuto1 extends OpMode implements SetBitmap {
         // make and add a step that tells us we're done
         mSequence.add(new AutoLib.LogTimeStep(this,"Done!", 5));
 
-        mView = (ImageView)((Activity)hardwareMap.appContext).findViewById(com.qualcomm.ftcrobotcontroller.R.id.OpenCVOverlay);
+     //   mView = (ImageView)((Activity)hardwareMap.appContext).findViewById(com.qualcomm.ftcrobotcontroller.R.id.OpenCVOverlay);
         mView.post(new Runnable() {
             @Override
             public void run() {
@@ -543,4 +543,4 @@ public class FirstRelicRecAuto1 extends OpMode implements SetBitmap {
     }
 
 }
-
+*/

@@ -16,7 +16,7 @@ import org.firstinspires.ftc.teamcode._Libs.VuforiaLib_RoverRuckus;
  */
 
 @Autonomous(name="Test: Vuforia Navigation Test 4", group ="Test")
-//@Disabled
+@Disabled
 public class VuforiaNavigationTest4 extends OpMode {
 
     VuforiaLib_RoverRuckus mVLib;

@@ -20,7 +20,7 @@ import com.qualcomm.robotcore.eventloop.opmode.OpMode;
 
 import org.firstinspires.ftc.teamcode._Libs.BlobFinder;
 import org.firstinspires.ftc.teamcode._Libs.CameraLib;
-import org.firstinspires.ftc.teamcode._Libs.RS_Posterize;
+//import org.firstinspires.ftc.teamcode._Libs.RS_Posterize;
 import org.firstinspires.ftc.teamcode._Libs.VuforiaLib_RoverRuckus;
 
 
@@ -31,7 +31,7 @@ public class CameraTestOpVfRS extends OpMode {
     int mLoopCount;
     VuforiaLib_RoverRuckus mVLib;
     ImageView mView;
-    RS_Posterize mRsPosterize;
+  //  RS_Posterize mRsPosterize;
     Bitmap mBmOut;
     Paint mPaintGreen;
 
@@ -44,7 +44,7 @@ public class CameraTestOpVfRS extends OpMode {
         mVLib = new VuforiaLib_RoverRuckus();
         mVLib.init(this, null);     // pass it this OpMode (so it can do telemetry output) and use its license key for now
 
-        mView = (ImageView)((Activity)hardwareMap.appContext).findViewById(com.qualcomm.ftcrobotcontroller.R.id.OpenCVOverlay);
+       // mView = (ImageView)((Activity)hardwareMap.appContext).findViewById(com.qualcomm.ftcrobotcontroller.R.id.OpenCVOverlay);
         mView.post(new Runnable() {
             @Override
             public void run() {
@@ -59,8 +59,8 @@ public class CameraTestOpVfRS extends OpMode {
     @Override public void start()
     {
         // do this here -- takes too long to do in init()??
-        mRsPosterize = new RS_Posterize();
-        mRsPosterize.createScript(this.hardwareMap.appContext);
+        //mRsPosterize = new RS_Posterize();
+        //mRsPosterize.createScript(this.hardwareMap.appContext);
 
         /** Start tracking the data sets we care about. */
         mVLib.start();
@@ -75,7 +75,7 @@ public class CameraTestOpVfRS extends OpMode {
             Bitmap bmOut = Bitmap.createBitmap(bmIn.getWidth(), bmIn.getHeight(), Bitmap.Config.RGB_565);
 
             // do some processing on the input bitmap in RenderScript to generate the output image
-            mRsPosterize.runScript(bmIn, bmOut);
+            //mRsPosterize.runScript(bmIn, bmOut);
 
             // optionally rotate image 180 degrees if phone orientation makes it upside down
             final boolean bUpsideDown = true;
@@ -117,7 +117,7 @@ public class CameraTestOpVfRS extends OpMode {
     }
 
     public void stop() {
-        if (mRsPosterize != null)
+     /*   if (mRsPosterize != null)
             mRsPosterize.destroyScript();
         mVLib.stop();       // Vuforia claims to do this automatically on OpMode stop but ...
         mView.post(new Runnable() {
@@ -125,7 +125,7 @@ public class CameraTestOpVfRS extends OpMode {
             public void run() {
                 mView.setAlpha(0.0f);
             }
-        });     // hide the overlay window
+        });     // hide the overlay window */
     }
 
     public static Bitmap RotateBitmap(Bitmap source, float angle)

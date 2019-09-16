@@ -1,5 +1,6 @@
 package org.firstinspires.ftc.teamcode._Test._Sensors;
 
+import com.qualcomm.robotcore.eventloop.opmode.Disabled;
 import com.qualcomm.robotcore.eventloop.opmode.OpMode;
 import org.firstinspires.ftc.teamcode._Libs.PixyCam;
 
@@ -15,6 +16,7 @@ import static android.R.attr.rotation;
 // TBD -- rewrite this code to actually do that ...
 
 @TeleOp(name="TestPixyCam")
+@Disabled
 public class TestPixyCam extends OpMode
 {
 

@@ -50,9 +50,9 @@ import com.qualcomm.robotcore.hardware.GyroSensor;
 import org.firstinspires.ftc.robotcore.external.navigation.RelicRecoveryVuMark;
 import org.firstinspires.ftc.teamcode._Libs.AutoLib;
 import org.firstinspires.ftc.teamcode._Libs.BlobFinder;
-import org.firstinspires.ftc.teamcode._Libs.RS_Posterize;
+//import org.firstinspires.ftc.teamcode._Libs.RS_Posterize;
 import org.firstinspires.ftc.teamcode._Libs.SensorLib;
-import org.firstinspires.ftc.teamcode._Libs.SetPosterizer;
+//import org.firstinspires.ftc.teamcode._Libs.SetPosterizer;
 import org.firstinspires.ftc.teamcode._Libs.VuforiaLib_RoverRuckus;
 
 import java.util.ArrayList;
@@ -68,11 +68,11 @@ import java.util.ArrayList;
 // this is a guide step that uses camera image data to
 // guide the robot to the indicated bin of the cryptobox
 //
-class GoToBlockGuideStep extends AutoLib.MotorGuideStep implements SetPosterizer {
+//class GoToBlockGuideStep extends AutoLib.MotorGuideStep implements SetPosterizer {
 
-    VuforiaLib_RoverRuckus mVLib;
-    OpMode mOpMode;
-
+    //VuforiaLib_RoverRuckus mVLib;
+  //  OpMode mOpMode;
+/*
     // robot-specific settings - where is your camera relative to the block you're trying to place?
     // if the camera is on the right side of the block, then mCameraOnRight=true and mCameraOffset is positive.
     // if the camera is on the left side of the block, then mCameraOnRight=false and mCameraOffset is negative.
@@ -334,7 +334,7 @@ public class RoverRuckusGoToBlock1 extends OpMode implements SetBitmap {
         // stop all motors
         mSequence.add(new AutoLib.MoveByTimeStep(mMotors, power, 0, true));
 
-        mView = (ImageView)((Activity)hardwareMap.appContext).findViewById(com.qualcomm.ftcrobotcontroller.R.id.OpenCVOverlay);
+        //mView = (ImageView)((Activity)hardwareMap.appContext).findViewById(com.qualcomm.ftcrobotcontroller.R.id.OpenCVOverlay);
         mView.post(new Runnable() {
             @Override
             public void run() {
@@ -404,4 +404,4 @@ public class RoverRuckusGoToBlock1 extends OpMode implements SetBitmap {
     }
 
 }
-
+*/

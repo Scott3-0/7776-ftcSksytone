@@ -1,6 +1,6 @@
 package org.firstinspires.ftc.teamcode._Libs;
 
-import android.support.annotation.ColorInt;
+//import android.support.annotation.ColorInt;
 
 import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;
 import com.qualcomm.robotcore.eventloop.opmode.OpMode;
@@ -2229,7 +2229,7 @@ public class AutoLib {
          * Get the "hue"
          * @return hue
          */
-        @ColorInt
+       // @ColorInt
         public int argb() { return 0; }
 
         /**

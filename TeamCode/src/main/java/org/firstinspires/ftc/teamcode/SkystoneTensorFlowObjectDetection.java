@@ -69,7 +69,7 @@ public class SkystoneTensorFlowObjectDetection extends LinearOpMode {
      * Once you've obtained a license key, copy the string from the Vuforia web site
      * and paste it in to your code on the next line, between the double quotes.
      */
-    private static final String VUFORIA_KEY =x
+    private static final String VUFORIA_KEY =
             "AXtwdvn/////AAABmYAEtZMknkPAn47doARtMo49sf6RfQi9lie8vsFLc28fLMBPMJGkbZm862cud/+RUArY/ZhZywV2w4sqylfqtIVLHzFGb1ZhZAbeXMJ5csFW/cfnemnkQ4dFHF7ftxPoZuyZ/DhBciVmhKlXDoTe1OxOgomtXz2p2cTObHVQ3EPOo22OCCHFPQqbkIKjZLDgfa4jfO+3Xru3axgn4wrFllc78ubJgEvw5EcSotrX7q+LbjKpUfx0oFk1TZuiA5b/cTzaOxAyQ0ngoECCokA9YHse6/ft+g6uQpqUiYiKhXq1fM6pWP/iLbxJbTb4bPYsWU1ddFwwX7dQMdm8XLkEjRRS/qMmepJZ1mEb4m/bE94c";
 
     /**

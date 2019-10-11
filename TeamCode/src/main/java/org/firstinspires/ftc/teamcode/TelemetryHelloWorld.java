@@ -12,7 +12,7 @@ import com.qualcomm.robotcore.eventloop.opmode.TeleOp;
 public class TelemetryHelloWorld extends OpMode {
     @Override
     public void init(){
-        telemetry.addData(">","Press Player to Show Telemetry");
+        telemetry.addData(">","Press Play to Show Telemetry");
     }
 
     @Override

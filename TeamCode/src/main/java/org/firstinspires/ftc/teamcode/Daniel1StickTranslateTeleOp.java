@@ -1,5 +1,6 @@
 /**
  * Teleop Mode where Left Stick Controls Robot Translation and Right Stick Controls Rotation
+ * Made by Daniel on 10/11/19
  */
 
 package org.firstinspires.ftc.teamcode;
@@ -12,6 +13,7 @@ public class Daniel1StickTranslateTeleOp extends OpMode {
     @Override
     public void init(){
         telemetry.addData(">","Initializing 1StickTranslate");
+        SkystoneHardware robot = new SkystoneHardware();
     }
 
     @Override

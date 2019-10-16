@@ -1,7 +1,9 @@
-package org.firstinspires.ftc.teamcode;
+package org.firstinspires.ftc.teamcode._Libs.hardware;
 
 import com.qualcomm.robotcore.hardware.DcMotor;
 import com.qualcomm.robotcore.hardware.HardwareMap;
+
+import org.firstinspires.ftc.teamcode._Libs.AutoLib;
 
 /**
  * Created by bremm on 9/15/19.
@@ -17,6 +19,7 @@ public class SkystoneHardware {
 
     public void init (HardwareMap ahwMap) {
         hwMap = ahwMap;
+
 
         fl = hwMap.get(DcMotor.class, "fl");
         bl = hwMap.get(DcMotor.class, "bl");

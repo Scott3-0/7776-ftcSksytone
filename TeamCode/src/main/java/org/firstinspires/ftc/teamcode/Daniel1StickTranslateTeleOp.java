@@ -42,6 +42,7 @@ public class Daniel1StickTranslateTeleOp extends OpMode {
     public void loop(){
         //telemetry.addData(">","Loop");
         power = (float) Math.sqrt((gamepad1.left_stick_x*gamepad1.left_stick_x)+(gamepad1.left_stick_y*gamepad1.left_stick_y)); //sqrt(x^2+y^2)= distance of joystick to origin use as power for motors !!!check output values before sending to robot!!!
-        theta = (float) Math.atan(gamepad1.left_stick_y/gamepad1.left_stick_x); //atan(y/x)= angle (in rad) of joystick from origin use to determine direction of robot movement !!!also check!!!
+        theta = (float) Math.atan2(gamepad1.left_stick_y, gamepad1.left_stick_x); //atan(y/x)= angle (in rad) of joystick from origin use to determine direction of robot movement !!!also check!!!
+
     }
 }

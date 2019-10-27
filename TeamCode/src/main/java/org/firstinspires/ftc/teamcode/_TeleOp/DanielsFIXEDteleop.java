@@ -18,10 +18,22 @@ public class DanielsFIXEDteleop extends OpMode {
     @Override
     public void init(){
         motors = new DcMotor[4];
+        robot.init(hardwareMap);
+
         motors[0] = robot.fr;
         motors[1] = robot.br;
         motors[2] = robot.fl;
         motors[3] = robot.bl;
+
+        motors[0] = null;
+        motors[1] = null;
+        motors[2]  = null;
+        motors[3] = null;
+
+
+
+
+
     }
 
     @Override

@@ -17,7 +17,7 @@ public class LM1Teleop extends OpMode{
     public void init(){
         motors = new DcMotor[4];
         robot.init(hardwareMap);
-
+      //TODO: see if we can switch the br and fr here rather than in the config file (we'll test that on the Fri before LM1)
         motors[0] = robot.fr;
         motors[1] = robot.br;
         motors[2] = robot.fl;

@@ -34,7 +34,7 @@ public class ScottsLM0Teleop extends OpMode {
     public void loop(){
         float left = gamepad1.left_stick_y;
         float right = gamepad1.right_stick_y;
-        float power = 0.3f;
+        float power = 0.32f;
 
         left = Range.clip(left, -1, 1); //unnecessary but I'll let it slide
         right = Range.clip(right, -1, 1);

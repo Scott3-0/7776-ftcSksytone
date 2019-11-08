@@ -24,13 +24,14 @@ public class FoundationSideAuto extends OpMode {
         motors[2] = robot.fl;
         motors[3] = robot.bl;
         //TODO: Test this at Friday's practice
-        double inTravel = 560/(4*(Math.PI)); //this should convert to inches
+        double inTravel = 560/(4*(Math.PI)); //this should convert to inches //TODO: See if I need to change to 560*4*Math.PI
         float uniPow = 0.33f; //for 20:1 motors
         //560 == 1 rotation of the wheel (I think?)
         //Which should be around 4pi inches or ~12.56637 inches
         seq = new AutoLib.LinearSequence();
-        seq.add(new AutoLib.MoveByEncoderStep(motors, uniPow, (int) Math.round(5*inTravel), true)); //should travel 5 inches
-
+        seq.add(new AutoLib.MoveByEncoderStep(motors, uniPow, (int) Math.round(6*inTravel), false)); //should travel 6 in
+        //seq.add(new AutoLib.SquirrelyGyroCountedDriveStep) //TODO: Get this to work, or see if there is something better for strafing
+                                                             //TODO: Also setup a PID Loop and figure out how to use Gyro
         done = false;
     }
 

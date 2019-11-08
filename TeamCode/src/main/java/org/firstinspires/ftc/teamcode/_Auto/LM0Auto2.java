@@ -23,7 +23,7 @@ public class LM0Auto2 extends OpMode {
         float power = 0.5f;
         float sec = 0.5f;
 
-        seq = new AutoLib.LinearSequence();
+        seq = new AutoLib.LinearSequence();//TODO: See if this works with the changed config file
         seq.add(new AutoLib.MoveSquirrelyByTimeStep(motors, 0f, power, 0.25f, false));
         seq.add(new AutoLib.MoveSquirrelyByTimeStep(motors, -90f, power, sec, true));
 

@@ -7,8 +7,8 @@ import com.qualcomm.robotcore.hardware.DcMotor;
 import org.firstinspires.ftc.teamcode._Libs.AutoLib;
 import org.firstinspires.ftc.teamcode._Libs.hardware.SkystoneHardware;
 
-@Autonomous(name="LM1 Foundation Side")
-public class FoundationSideAuto extends OpMode {
+@Autonomous(name="LM1 Depot Side")
+public class DepotSideAuto extends OpMode {
     SkystoneHardware robot = new SkystoneHardware();
     DcMotor motors[];
     AutoLib.Sequence seq;
@@ -24,14 +24,14 @@ public class FoundationSideAuto extends OpMode {
         motors[2] = robot.fl;
         motors[3] = robot.bl;
         //TODO: Test this at Friday's practice
-        double inTravel = 560/(4*(Math.PI)); //this should convert to inches //TODO: See if I need to change to 560*4*Math.PI
+        double inTravel = 560/(4*(Math.PI)); //this should convert to inches
         float uniPow = 0.33f; //for 20:1 motors
-        //560 == 1 rotation of the wheel (I think?)
+        //560 == 1 rotation of the wheel
         //Which should be around 4pi inches or ~12.56637 inches
         seq = new AutoLib.LinearSequence();
-        seq.add(new AutoLib.MoveByEncoderStep(motors, uniPow, (int) Math.round(12*inTravel), false)); //should travel 6 in
-        seq.add(new AutoLib.MoveSquirrelyByTimeStep(motors, -90f, uniPow, 0.75f, true)); //TODO: Get this to work, or see if there is something better for strafing
-                                                             //TODO: Also setup a PID Loop and figure out how to use Gyro
+        seq.add(new AutoLib.MoveByEncoderStep(motors, uniPow, (int) Math.round(12*inTravel), false)); //should travel 1 ft
+        seq.add(new AutoLib.MoveSquirrelyByTimeStep(motors, 90f, uniPow, 0.75f, true)); //TODO: Get this to work, or see if there is something better for strafing
+        //TODO: Also setup a PID Loop and figure out how to use Gyro
         done = false;
     }
 

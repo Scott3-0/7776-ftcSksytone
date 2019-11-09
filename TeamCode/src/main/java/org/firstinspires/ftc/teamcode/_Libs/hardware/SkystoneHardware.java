@@ -3,6 +3,7 @@ package org.firstinspires.ftc.teamcode._Libs.hardware;
 import com.qualcomm.robotcore.hardware.DcMotor;
 import com.qualcomm.robotcore.hardware.DcMotorSimple;
 import com.qualcomm.robotcore.hardware.HardwareMap;
+import com.qualcomm.robotcore.hardware.Servo;
 
 import org.firstinspires.ftc.teamcode._Libs.AutoLib;
 
@@ -16,6 +17,8 @@ public class SkystoneHardware {
     public DcMotor fr  = null;
     public DcMotor br = null;
 
+    public Servo greg;
+
     HardwareMap hwMap = null;
 
     public void init (HardwareMap ahwMap) {
@@ -26,6 +29,8 @@ public class SkystoneHardware {
         bl = hwMap.get(DcMotor.class, "bl");
         fr = hwMap.get(DcMotor.class, "fr");
         br = hwMap.get(DcMotor.class, "br");
+
+        greg = hwMap.get(Servo.class, "greg");
 
         fl.setDirection(DcMotor.Direction.FORWARD);
         bl.setDirection(DcMotor.Direction.FORWARD);

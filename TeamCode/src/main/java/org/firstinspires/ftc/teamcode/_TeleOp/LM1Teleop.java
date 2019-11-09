@@ -31,7 +31,7 @@ public class LM1Teleop extends OpMode{
 
     @Override
     public void loop(){
-        float uniPow = 0.33f; //for 20:1 motors
+        float uniPow =1f; //for 20:1 motors
         float tx = gamepad1.left_stick_x; //rotation
         float ty = -gamepad1.left_stick_y;	//forward & back -- y is reversed :(
         float left = (ty + tx/2);
@@ -57,20 +57,30 @@ public class LM1Teleop extends OpMode{
         front *= power;
         back *= power;
 
-        front = front*front*front;
-        back = back*back*back;
-        left = left*left*left;
-        right = right*right*right;
-
-        front *= uniPow;
-        back *= uniPow;
-        left *= uniPow;
-        right *= uniPow;
 
         double fr = Range.clip(front+right, -1, 1);
         double br = Range.clip(back+right, -1, 1);
         double fl = Range.clip(front+left, -1, 1);
         double bl = Range.clip(back+left, -1, 1);
+
+     /*   fr *= uniPow;
+        br *= uniPow;
+        fl *= uniPow;
+        bl *= uniPow;
+
+        fr = fr*fr*fr;
+        br = br*br*br;
+        fl = fl*fl*fl;
+        bl = bl*bl*bl;
+
+        fr = Range.clip(fr, -1, 1);
+        br = Range.clip(br, -1, 1);
+        fl = Range.clip(fl, -1, 1);
+        bl = Range.clip(bl, -1, 1); */
+
+        //TODO: Add the A-B functionality of the greg servo
+        //if()
+       // gregServo();
 
         motors[0].setPower(fr);
         motors[1].setPower(br);
@@ -78,6 +88,14 @@ public class LM1Teleop extends OpMode{
         motors[3].setPower(bl);
         telemetry.addData("", gamepad1);
     }
+
+ /*   public void gregServo(){
+        double tgtPow = 0;
+
+        while(OpModeIsActive()){//Why don't this work :((
+            tgtPow
+        }
+    }*/
 
     @Override
     public void stop(){

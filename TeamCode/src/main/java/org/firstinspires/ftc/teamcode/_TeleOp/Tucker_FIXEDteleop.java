@@ -14,7 +14,6 @@ public class Tucker_FIXEDteleop extends OpMode {
 
     DcMotor motors[];
 
-
     @Override
     public void init(){
         motors = new DcMotor[4];
@@ -74,10 +73,10 @@ public class Tucker_FIXEDteleop extends OpMode {
         double powFl = Range.clip(front+left, -1, 1);
         double powBl = Range.clip(back+left, -1, 1);
 
-        motors[0].setPower(powFr);
-        motors[1].setPower(powBr);
-        motors[2].setPower(powFl);
-        motors[3].setPower(powBl);
+        motors[0].setPower(powFl);
+        motors[1].setPower(powFr);
+        motors[2].setPower(powBl);
+        motors[3].setPower(powBr);
 
         telemetry.addData("Text", "*** v1.1 ***");
         telemetry.addData("front left/right power:", "%.2f %.2f", powFl, powFr);

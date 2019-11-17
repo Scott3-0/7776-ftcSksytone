@@ -68,10 +68,10 @@ public class Tucker_FIXEDteleop extends OpMode {
         front *= power;
         back *= power;
 
-        double powFr = Range.clip(front+right, -1, 1);
-        double powBr = Range.clip(back+right, -1, 1);
         double powFl = Range.clip(front+left, -1, 1);
+        double powFr = Range.clip(front+right, -1, 1);
         double powBl = Range.clip(back+left, -1, 1);
+        double powBr = Range.clip(back+right, -1, 1);
 
         motors[0].setPower(powFl);
         motors[1].setPower(powFr);

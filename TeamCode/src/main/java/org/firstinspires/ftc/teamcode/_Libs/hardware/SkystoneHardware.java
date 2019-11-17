@@ -13,11 +13,11 @@ import org.firstinspires.ftc.teamcode._Libs.AutoLib;
 
 public class SkystoneHardware {
     public DcMotor fl = null;
+    public DcMotor fr = null;
     public DcMotor bl = null;
-    public DcMotor fr  = null;
     public DcMotor br = null;
 
-    public Servo greg;
+    //public Servo greg;
 
     HardwareMap hwMap = null;
 

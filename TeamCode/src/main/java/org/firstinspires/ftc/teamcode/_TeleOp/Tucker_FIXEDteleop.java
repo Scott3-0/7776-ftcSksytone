@@ -26,12 +26,6 @@ public class Tucker_FIXEDteleop extends OpMode {
         motors[3] = robot.br;
 
         //TODO: Teach people to not set things to null for garbage reasons
-        /*
-        motors[0] = null;
-        motors[1] = null;
-        motors[2] = null;
-        motors[3] = null;
-        */
     }
 
     @Override

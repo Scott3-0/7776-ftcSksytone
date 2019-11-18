@@ -29,11 +29,6 @@ public class DanielsFIXEDteleop extends OpMode {
         motors[1] = null;
         motors[2]  = null;
         motors[3] = null;
-
-
-
-
-
     }
 
     @Override
